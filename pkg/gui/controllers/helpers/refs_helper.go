@@ -239,7 +239,7 @@ func (self *RefsHelper) CreateGitResetMenu(name string, ref string) error {
 		// not i18'ing because it's git terminology
 		{strength: "mixed", label: "Mixed reset", key: 'm', tooltip: self.c.Tr.ResetMixedTooltip},
 		{strength: "soft", label: "Soft reset", key: 's', tooltip: self.c.Tr.ResetSoftTooltip},
-		{strength: "hard", label: "Hard reset", key: 'h', tooltip: self.c.Tr.ResetHardTooltip},
+		{strength: "hard", label: "Hard reset", key: '0', tooltip: self.c.Tr.ResetHardTooltip},
 	}
 
 	menuItems := lo.Map(strengths, func(row strengthWithKey, _ int) *types.MenuItem {
